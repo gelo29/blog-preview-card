@@ -80,6 +80,7 @@ select {
   text-decoration: none;
 }
 
+.main-container a:link,
 .main-container a:active,
 .main-container a:visited {
   color: var(--color-gray-950);
