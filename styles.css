@@ -1,0 +1,138 @@
+/* Color and Font Family Variables */
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+  --font-body: "Figtree", sans-serif;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(/assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+/* Reusable CSS reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: var(--font-body);
+  background-color: var(--color-yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ================================ Main Layout ===================================== */
+
+.main-container {
+  margin-top: auto;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0 0 var(--color-gray-950);
+  background-color: var(--color-white);
+}
+
+.main-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.main-container a {
+  text-decoration: none;
+}
+.main-container a:visited {
+  color: var(--color-gray-950);
+}
+.main-container a:hover,
+.main-container a:focus {
+  color: var(--color-yellow);
+}
+.main-container article h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.main-container article p,
+.main-container article h1 {
+  margin: 10px 10px 10px 0;
+}
+
+.main-container article > p:nth-of-type(2) {
+  font-size: 1rem;
+  color: var(--color-gray-500);
+}
+
+.main-container article > p:nth-of-type(2),
+.main-container img {
+  margin-bottom: 20px;
+}
+.main-container span {
+  display: inline-block;
+  background-color: var(--color-yellow);
+  padding: 7px 20px 7px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.author {
+  height: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0 10px 0;
+}
+.author img {
+  margin: 0;
+  max-width: 50px;
+  width: 100%;
+}
+.author p {
+  font-weight: 800;
+}
+.attribution {
+  margin: auto 0 10px 0;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
